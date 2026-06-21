@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="MoneyRoute Daily gives Singapore users one practical daily money move across Wise, Revolut, YouTrip and Instarem Amaze."
+    />
+    <title>MoneyRoute Daily</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="MoneyRoute Daily home">
+        MoneyRoute <span>Daily</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#today">Today</a>
+        <a href="#compare">Compare</a>
+        <a href="#how">How it works</a>
+        <a href="#disclosure">Disclosure</a>
+      </nav>
+      <button class="region" type="button" aria-label="Singapore region selected">
+        SG
+        <span aria-hidden="true">⌄</span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero" id="today">
+        <div class="hero-copy">
+          <h1>One money move worth checking today</h1>
+          <p class="lede">
+            We scan FX rates, card fees, referral rewards and everyday deals so
+            Singapore users can act on one clear recommendation each day.
+          </p>
+
+          <div class="trust-list" aria-label="Service promises">
+            <div class="trust-item">
+              <span aria-hidden="true">✓</span>
+              <div>
+                <strong>1 daily recommendation</strong>
+                <p>Short, clear and actionable.</p>
+              </div>
+            </div>
+            <div class="trust-item">
+              <span aria-hidden="true">✓</span>
+              <div>
+                <strong>No spam, unsubscribe anytime</strong>
+                <p>Join free. Alerts can go by email or Telegram.</p>
+              </div>
+            </div>
+          </div>
+
+          <form class="signup" id="signup-form">
+            <div class="channel-tabs" role="tablist" aria-label="Alert channel">
+              <button class="channel-tab active" type="button" data-channel="Email">Email</button>
+              <button class="channel-tab" type="button" data-channel="Telegram">Telegram</button>
+            </div>
+            <div class="signup-row">
+              <label class="sr-only" for="contact">Email address or Telegram handle</label>
+              <input
+                id="contact"
+                name="contact"
+                type="text"
+                autocomplete="email"
+                placeholder="you@domain.com"
+                required
+              />
+              <button class="primary-button" type="submit">Get Daily Alert</button>
+            </div>
+            <p class="form-note" id="form-note">
+              Join 3,000+ Singapore users getting daily money moves.
+            </p>
+          </form>
+        </div>
+
+        <article class="daily-card" aria-labelledby="pick-heading">
+          <div class="card-topline">
+            <span id="today-date">Today</span>
+            <span>Updated 8:30 AM SGT</span>
+          </div>
+          <hr />
+          <div class="pick-header">
+            <div>
+              <h2 id="pick-heading">Today’s MoneyRoute Pick</h2>
+              <h3>Use Wise for SGD → EUR</h3>
+              <p>Best overall after fees for this sample transfer size.</p>
+            </div>
+            <span class="star" aria-hidden="true">★</span>
+          </div>
+          <dl class="pick-stats">
+            <div>
+              <dt>You send</dt>
+              <dd>S$1,000.00</dd>
+            </div>
+            <div>
+              <dt>Recipient gets est.</dt>
+              <dd>€672.41</dd>
+            </div>
+            <div>
+              <dt>Total fees est.</dt>
+              <dd>S$6.41</dd>
+            </div>
+            <div>
+              <dt>Rate SGD/EUR</dt>
+              <dd>0.6724</dd>
+            </div>
+            <div>
+              <dt>Why today?</dt>
+              <dd>Wise is 0.38% better than the average option in this sample.</dd>
+            </div>
+          </dl>
+          <a class="primary-button full" href="https://wise.com" target="_blank" rel="noreferrer">
+            Check live offer on Wise
+          </a>
+          <p class="fineprint">Rates change frequently. Check the provider before you send.</p>
+        </article>
+      </section>
+
+      <section class="compare-section" id="compare">
+        <div class="section-heading">
+          <div>
+            <h2>Compare top options</h2>
+            <p>Live rates and fees change often. This page shows neutral sample comparisons.</p>
+          </div>
+          <a href="#signup-form">Get tomorrow’s pick →</a>
+        </div>
+
+        <div class="provider-grid" aria-label="Provider comparison">
+          <article class="provider-card">
+            <div class="provider-head">
+              <span class="logo wise">W</span>
+              <div>
+                <h3>Wise</h3>
+                <p>Best for transparent FX and global transfers</p>
+              </div>
+            </div>
+            <dl>
+              <div><dt>FX markup est.</dt><dd>0.40%</dd></div>
+              <div><dt>Transfer fee est.</dt><dd>S$6.41</dd></div>
+              <div><dt>Card SGD spend</dt><dd>0% foreign fee</dd></div>
+              <div><dt>Referral reward</dt><dd>Varies by market</dd></div>
+              <div><dt>Our take</dt><dd>Best overall today</dd></div>
+            </dl>
+            <a href="https://wise.com" target="_blank" rel="noreferrer">Check live offer</a>
+          </article>
+
+          <article class="provider-card">
+            <div class="provider-head">
+              <span class="logo revolut">R</span>
+              <div>
+                <h3>Revolut</h3>
+                <p>Useful app and card for travel spending</p>
+              </div>
+            </div>
+            <dl>
+              <div><dt>FX markup est.</dt><dd>0.60%</dd></div>
+              <div><dt>Card FX fee</dt><dd>Plan dependent</dd></div>
+              <div><dt>ATM withdrawal</dt><dd>Allowance varies</dd></div>
+              <div><dt>Referral reward</dt><dd>Campaign dependent</dd></div>
+              <div><dt>Our take</dt><dd>Best card control</dd></div>
+            </dl>
+            <a href="https://www.revolut.com/en-SG/" target="_blank" rel="noreferrer">Check live offer</a>
+          </article>
+
+          <article class="provider-card">
+            <div class="provider-head">
+              <span class="logo youtrip">Y</span>
+              <div>
+                <h3>YouTrip</h3>
+                <p>Multi-currency wallet made for travellers</p>
+              </div>
+            </div>
+            <dl>
+              <div><dt>FX markup est.</dt><dd>0.80%</dd></div>
+              <div><dt>Card FX fee</dt><dd>Route dependent</dd></div>
+              <div><dt>ATM withdrawal</dt><dd>Fee after allowance</dd></div>
+              <div><dt>Referral reward</dt><dd>Campaign dependent</dd></div>
+              <div><dt>Our take</dt><dd>Good for multi-currency</dd></div>
+            </dl>
+            <a href="https://www.you.co/sg/youtrip/" target="_blank" rel="noreferrer">Check live offer</a>
+          </article>
+
+          <article class="provider-card">
+            <div class="provider-head">
+              <span class="logo amaze">A</span>
+              <div>
+                <h3>Instarem Amaze</h3>
+                <p>Useful for specific routes and card pairing</p>
+              </div>
+            </div>
+            <dl>
+              <div><dt>FX markup est.</dt><dd>0.70%</dd></div>
+              <div><dt>Transfer fee est.</dt><dd>Route dependent</dd></div>
+              <div><dt>Card SGD spend</dt><dd>Fee may apply</dd></div>
+              <div><dt>Referral reward</dt><dd>Campaign dependent</dd></div>
+              <div><dt>Our take</dt><dd>Good for niche routes</dd></div>
+            </dl>
+            <a href="https://www.instarem.com/amaze-card/" target="_blank" rel="noreferrer">Check live offer</a>
+          </article>
+        </div>
+
+        <p class="source-note">
+          Estimates are sample values for SGD → EUR with S$1,000. Replace links with approved
+          referral or affiliate URLs before paid promotion.
+        </p>
+      </section>
+
+      <section class="how-section" id="how">
+        <div class="section-heading compact">
+          <div>
+            <h2>How MoneyRoute Daily works</h2>
+            <p>Keep the decision small so taking action takes minutes.</p>
+          </div>
+        </div>
+        <div class="steps">
+          <article>
+            <span aria-hidden="true">⌕</span>
+            <h3>Scan</h3>
+            <p>Check live provider offers, fee pages, referral campaigns and relevant card terms.</p>
+          </article>
+          <article>
+            <span aria-hidden="true">⚖</span>
+            <h3>Compare</h3>
+            <p>Normalize the real cost and benefit for one concrete route or spend scenario.</p>
+          </article>
+          <article>
+            <span aria-hidden="true">↗</span>
+            <h3>Send or withdraw</h3>
+            <p>Use the provider’s own app or site. MoneyRoute never stores customer funds.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="disclosure" id="disclosure">
+        <div class="info-icon" aria-hidden="true">i</div>
+        <div>
+          <h2>How this can make money transparently</h2>
+          <p>
+            MoneyRoute Daily can earn referral fees, affiliate commissions or sponsorship revenue
+            when users sign up or complete qualifying actions through tracked links. That revenue
+            can be paid to a bank account or wallet supported by each affiliate network or payment
+            processor, then moved to Wise or Revolut where available. The site does not custody,
+            pool or transfer user funds.
+          </p>
+          <p>
+            The S$20/day target is a business target, not a guarantee. A realistic starting model is
+            2-5 qualifying referrals per week plus small sponsorship or premium alert revenue.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <a class="brand" href="#top">MoneyRoute <span>Daily</span></a>
+        <p>One practical money move each day for Singapore travellers, freelancers and shoppers.</p>
+      </div>
+      <div>
+        <h2>Explore</h2>
+        <a href="#today">Today</a>
+        <a href="#compare">Compare</a>
+        <a href="#how">How it works</a>
+      </div>
+      <div>
+        <h2>Legal</h2>
+        <a href="#disclosure">Disclosure</a>
+        <a href="mailto:hello@moneyroute.daily">Contact</a>
+        <p>General reference only. Not financial advice.</p>
+      </div>
+      <div>
+        <h2>Made for Singapore</h2>
+        <p>All times in SGT UTC+8.</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
